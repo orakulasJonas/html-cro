@@ -1,6 +1,5 @@
 import logo from "../assets/logo.png";
 import { FOOTER_LINKS } from "../constants";
-
 function DisclaimerFooter() {
     return (
         <>
@@ -47,17 +46,17 @@ function DisclaimerFooter() {
                                         <div className="elementor-widget-container">
                                             <ul className="elementor-icon-list-items elementor-inline-items">
                                                 <li className="elementor-icon-list-item elementor-inline-item">
-                                                    <a href="#">
+                                                    <a href={FOOTER_LINKS.aboutUs}>
                                                         <span className="elementor-icon-list-text">ABOUT US</span>
                                                     </a>
                                                 </li>
                                                 <li className="elementor-icon-list-item elementor-inline-item">
-                                                    <a href="#">
+                                                    <a href={FOOTER_LINKS.privacyPolicy}>
                                                         <span className="elementor-icon-list-text">PRIVACY POLICY</span>
                                                     </a>
                                                 </li>
                                                 <li className="elementor-icon-list-item elementor-inline-item">
-                                                    <a href="#">
+                                                    <a href={FOOTER_LINKS.termsAndConditions}>
                                                         <span className="elementor-icon-list-text">TERMS & CONDITIONS</span>
                                                     </a>
                                                 </li>

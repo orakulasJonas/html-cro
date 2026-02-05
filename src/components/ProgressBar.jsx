@@ -1,38 +1,28 @@
-function ProgressBar({ id, label, value }) {
-  const barId = `elementor-progress-bar-${id}`;
-  const percentText = `${value}%`;
-  const ariaText = `${value}% ( )`;
-
+/**
+ * Single progress bar styled by Elementor CSS.
+ * The elId is embedded in the className so CSS can target it.
+ */
+export default function ProgressBar({ elId, title, pct }) {
+  const labelHtmlId = `pb-label-${elId}`;
   return (
-    <div
-      className={`elementor-element elementor-element-${id} ob-has-background-overlay elementor-widget elementor-widget-progress`}
-      data-id={id}
-      data-element_type="widget"
-      data-settings='{"_ob_widget_stalker_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no"}'
-      data-widget_type="progress.default"
-    >
+    <div className={`elementor-element elementor-element-${elId} ob-has-background-overlay elementor-widget elementor-widget-progress`}>
       <div className="elementor-widget-container">
-        <span className="elementor-title" id={barId}>
-          {label}{" "}
-        </span>
-
+        <span className="elementor-title" id={labelHtmlId}>{title}{" "}</span>
         <div
-          aria-labelledby={barId}
           className="elementor-progress-wrapper progress-success"
           role="progressbar"
+          aria-labelledby={labelHtmlId}
           aria-valuemin="0"
           aria-valuemax="100"
-          aria-valuenow={value}
-          aria-valuetext={ariaText}
+          aria-valuenow={pct}
+          aria-valuetext={`${pct}% ( )`}
         >
-          <div className="elementor-progress-bar" data-max={value}>
+          <div className="elementor-progress-bar" data-max={pct}>
             <span className="elementor-progress-text"> </span>
-            <span className="elementor-progress-percentage">{percentText}</span>
+            <span className="elementor-progress-percentage">{pct}%</span>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default ProgressBar;
