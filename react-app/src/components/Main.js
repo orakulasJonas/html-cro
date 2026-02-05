@@ -103,7 +103,7 @@ function Main() {
                 <img 
                   src={awardBadge} 
                   className={styles.awardBadge} 
-                  alt="Health Consumer Review Award" 
+                  alt="Consumer Review Award" 
                 />
               </div>
             </div>
