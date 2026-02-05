@@ -7,6 +7,10 @@ import ProductReviewVantrue from "./ProductReviewVantrue";
 /*
  * ProductReview renders a full product review card based on the product rank.
  *
+ * Each product has unique elementor element IDs baked into CSS selectors,
+ * so we dispatch to per-product components that preserve their exact markup.
+ * The product prop is used only for selecting the correct component by rank.
+ *
  * Props: product object with shape:
  *   rank: number (1-5)
  *   name: string
@@ -25,9 +29,6 @@ import ProductReviewVantrue from "./ProductReviewVantrue";
  *   wrapUpContent: JSX (optional, only for product 1)
  *   showAwardBadge: boolean (optional, only for product 1)
  *   elementorIds: object with all the unique elementor element IDs
- *
- * Because each product has unique elementor IDs baked into CSS selectors,
- * we dispatch to per-product components that preserve exact markup.
  */
 
 const REVIEW_BY_RANK = {
