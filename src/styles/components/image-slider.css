@@ -1,0 +1,17 @@
+/* Image Slider Component
+   Swiper-based image carousel
+*/
+
+.image-slider .swiper-slide {
+    max-height: 500px
+    }
+
+.image-slider .swiper-slide figure {
+    height: 500px
+    }
+
+.image-slider .swiper-slide figure img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+    }
