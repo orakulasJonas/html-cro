@@ -737,7 +737,6 @@ ul {
     background: transparent;
 }
 
-@charset "UTF-8";
 .comments-area a,
 .page-content a {
     text-decoration: underline;
@@ -1032,4 +1031,3 @@ body:not([class*="elementor-page-"]) .site-main {
 .site-header + .elementor {
     min-height: calc(100vh - 320px);
 }
-

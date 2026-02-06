@@ -3304,8 +3304,6 @@ body.rtl .e-con {
     background-color: #0099e5;
 }
 
-/*! elementor - v3.27.0 - 03-02-2025 */
-@charset "UTF-8";
 .elementor-star-rating {
     color: #ccd6df;
     display: inline-block;
@@ -3450,4 +3448,3 @@ body.rtl .e-con {
 .elementor-widget-text-editor .elementor-drop-cap-letter {
     display: inline-block;
 }
-
