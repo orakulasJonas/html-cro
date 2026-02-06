@@ -1,0 +1,26 @@
+/* Citations List Component
+   Grid layout for citation/reference lists
+*/
+
+.citations-list {
+    grid-column-gap: 51px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-left: 37px;
+    padding-right: 37px;
+    display: grid
+    }
+
+@media (max-width: 992px) {
+    .citations-list {
+        grid-template-columns: 1fr 1fr
+        }
+    }
+
+@media (max-width: 768px) {
+    .citations-list {
+        grid-template-columns: 1fr
+        }
+    }
