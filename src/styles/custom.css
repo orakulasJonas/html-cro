@@ -1,35 +1,21 @@
-/* Custom Overrides
-   This file is for any custom CSS overrides not covered by the modular files.
-   The original 258KB file has been refactored into organized modules.
-   See index.css for the full import structure.
-*/
-
-/* Inline styles from original HTML */
-
 h1.entry-title {
-    display: var(--page-title-display)
-    }
+    display: var(--page-title-display);
+}
 
 .site-header .site-branding {
     flex-direction: column;
-    align-items: stretch
-    }
+    align-items: stretch;
+}
 
 .site-header {
     padding-inline-end: 0;
-    padding-inline-start: 0
-    }
+    padding-inline-start: 0;
+}
 
 :root {
-    --page-title-display: none
-    }
-
-/* Start custom CSS */
+    --page-title-display: none;
+}
 
 header span {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-    }
-
-/* Featured Section - Start*/
-
-/* Textlinks - Start*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,41 +1,15 @@
-/* Main CSS entry point - imports all style modules */
-
-/* Base site styles (header, footer, navigation structure, resets) */
-@import './base.css';
-
-/* Elementor core framework styles */
-@import './elementor-core.css';
-
-/* Elementor Pro plugin styles */
-@import './elementor-pro.css';
-
-/* Navigation and menu component styles */
-@import './navigation.css';
-
-/* Widget styles (scroll-to-top, breadcrumbs, post info, info card, etc.) */
-@import './widgets.css';
-
-/* ============================================
-   Refactored Custom Styles (formerly custom.css)
-   ============================================ */
-
-/* Web font definitions */
-@import './fonts.css';
-
-/* Elementor global kit settings and theme overrides */
-@import './elementor-global.css';
-
-/* Reusable component styles */
-@import './components/featured-section.css';
-@import './components/textlinks.css';
-@import './components/image-slider.css';
-@import './components/citations.css';
-
-/* Page-specific Elementor styles */
-@import './pages/page-69963.css';
-@import './pages/page-46297.css';
-@import './pages/popup-7424.css';
-
-/* Custom overrides (minimal - see file for documentation) */
-@import './custom.css';
-
+@import "./base.css";
+@import "./elementor-core.css";
+@import "./elementor-pro.css";
+@import "./navigation.css";
+@import "./widgets.css";
+@import "./fonts.css";
+@import "./elementor-global.css";
+@import "./components/featured-section.css";
+@import "./components/textlinks.css";
+@import "./components/image-slider.css";
+@import "./components/citations.css";
+@import "./pages/page-69963.css";
+@import "./pages/page-46297.css";
+@import "./pages/popup-7424.css";
+@import "./custom.css";
